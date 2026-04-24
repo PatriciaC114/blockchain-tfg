@@ -1,13 +1,6 @@
 <?php
 /*
  index.php — MiniBlockchain (PHP + MySQL en WampServer)
- ------------------------------------------------------
- Está guardado en C:\\wamp64\\www\\TFG\\index.php
- 
- Requisitos previos una sola vez:
-   1) En phpMyAdmin crea la BD "minichain" con cotejamiento utf8mb4_unicode_ci.
-   2) Usuario: root  |  Password: (vacío por defecto en Wamp).
-   3) Abre http://localhost/TFG/    → este archivo se encarga del resto.
 
  Qué hace:
    - Guarda transacciones (texto) en mempool.
@@ -20,7 +13,7 @@ $DB_HOST = '127.0.0.1';
 $DB_NAME = 'minichain';
 $DB_USER = 'root';
 $DB_PASS = '';
-$DIFFICULTY_PREFIX = '00000'; // sube a '00000' si tu PC va rápido
+$DIFFICULTY_PREFIX = '00000';
 
 // ------- Conexión -------
 try {
