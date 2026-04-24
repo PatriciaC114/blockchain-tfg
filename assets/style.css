@@ -1,0 +1,109 @@
+  body{font-family:Helvetica;max-width:980px;margin:32px auto;padding:0 16px;background:#87ccb4;color:#222}
+  
+  h1{color:white;font-size:50px;margin:0 0 12px}
+   
+  h2{font-size:18px;margin:10px 0 8px}
+  
+  .card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:16px;margin:12px 0}
+  label{display:block;margin:8px 0 4px}
+  input[type=text],textarea{width:95%;padding:8px 10px;border:1px solid #ddd;border-radius:8px}
+  button{padding:8px 12px;border:0;border-radius:10px;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+  button.primary{background:#6e9c8c;color:#fff}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:8px;border-bottom:1px solid #eee;font-size:14px}
+  code{background:#f0f3f8;padding:2px 4px;border-radius:6px}
+  .mono{font-family:ui-monospace,Consolas,Monaco,monospace}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:800px){.row{grid-template-columns:1fr}}
+  
+  img{padding:16px;width:300px;border-radius:50px}
+  .titulo-imagen-contenedor {
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Coloca el espacio entre el título y la imagen */
+    align-items: center; /* Centra verticalmente ambos elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  }
+  .tx-scroll{
+  max-height: 320px;      /* ajusta a tu gusto */
+  overflow-y: auto;
+  border: 1px solid #ddd; /* opcional */
+  padding: 10px;          /* opcional */
+  border-radius: 8px;     /* opcional */
+  background: #fff;       /* opcional */
+  }
+  
+  .table-scroll{    /* contenido de tabla que se mueve con la barra */
+    max-height: 320px;       
+    overflow-y: auto;
+	background: white; 
+	border-radius: 0 0 8px 8px;
+  }
+
+  /* importante para sticky */
+  .tabla{
+    width: 100%;
+    border-collapse: collapse;
+	table-layout: fixed; 
+	padding: 10px 12px 10px 15px;
+  }
+
+  .tabla thead th{    /* titulos columnas tabla con barra */
+    position: sticky;
+    top: 0;
+    background: white;        
+    z-index: 2;
+	padding: 10px 12px;        
+    text-align: left;
+  }
+  
+  /* AÑADE esto para que las celdas coincidan con los th */
+  .tabla td{
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+
+
+  /* título de tabla con barra */
+  .panel-title{
+	font-size:18px;
+	margin:10px 0 0;
+    font-weight: 700;
+    padding: 15px 12px 0 12px;
+    background: white; 
+	border-radius: 8px 8px 0 0;	
+  }
+  
+  
+  
+  /* ===== Menú común ===== */
+.menu{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  padding:12px 16px;
+}
+
+.menu a{
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#f0f3f8;
+  color:#222;
+  box-shadow:0 1px 3px rgba(0,0,0,.08);
+}
+
+.menu a.active{
+  background:#6e9c8c;
+  color:#fff;
+}
+
+.menu a:hover{
+  filter:brightness(.98);
+}
+
+.tabla td.mono{
+  white-space: nowrap;
+}
